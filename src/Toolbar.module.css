@@ -1,0 +1,39 @@
+.toolbar{
+    display: flex;
+}
+
+.circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    border: solid #3565F2;
+    background-color: #0D0D0D;
+    border-width: thin;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    box-shadow: 2px 2px 5px #3564f27a;
+    position: relative;
+}
+.circle:hover{
+    box-shadow: none;
+}
+
+.circle:active{
+    background-color: #242424;
+}
+
+.circle:disabled{
+    background-color: #24242480;
+    border: solid #3564f249;
+    box-shadow: none;
+    
+}
+
+.icon-container{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: #2947F2 !important;
+}
