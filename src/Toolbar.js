@@ -32,9 +32,9 @@ function Toolbar(props) {
         }
     }
     
-    const handleSelectFile=(event)=>{
-        props.onBrowse(event.target.files)
-    }
+    // const handleSelectFile=(event)=>{
+    //     props.onBrowse(event.target.files)
+    // }
 
     return ( <div className={styles['toolbar']}>
         {toolbarIcons.map((icon,i)=>(
@@ -44,7 +44,7 @@ function Toolbar(props) {
                 </div>
             </button>
         ))}
-        <input type="file" id="file-browser-dialogue" ref={ref} hidden onChange={handleSelectFile}/>
+        <input type="file" id="file-browser-dialogue" ref={ref} hidden onChange={props.onBrowse}/>
     </div> );
 }
 
