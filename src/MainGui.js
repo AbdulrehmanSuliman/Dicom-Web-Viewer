@@ -55,12 +55,13 @@ function MainGui() {
         });
         setImageIds(imageIds);
         const StackScrollMouseWheelTool =
-          cornerstoneTools.StackScrollMouseWheelTool;
+        cornerstoneTools.StackScrollMouseWheelTool;
         const stack = {
           currentImageIdIndex: 0,
           imageIds
         };
         cornerstone.loadImage(imageIds[0]).then(image => {
+          console.log(image);
           cornerstone.displayImage(element, image);
           cornerstoneTools.addStackStateManager(element, ["stack"]);
           cornerstoneTools.addToolState(element, "stack", stack);
